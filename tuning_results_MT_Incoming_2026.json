@@ -1,0 +1,179 @@
+{
+  "dataset": "MT_Incoming_2026.csv",
+  "total_rows": 147,
+  "date_range": "2026-01-01T00:00:00 to 2026-05-27T00:00:00",
+  "n_trials": 107,
+  "n_completed": 107,
+  "best_rmse_log_space": 1.619463371179644,
+  "best_params": {
+    "growth_type": "logistic",
+    "log_transform": true,
+    "cap_multiplier": 3.5,
+    "changepoint_prior_scale": 0.5177156788188195,
+    "seasonality_prior_scale": 0.01842468031995574,
+    "changepoint_range": 0.8999999999999999,
+    "seasonality_mode": "multiplicative",
+    "interval_width": 0.8999999999999999,
+    "n_changepoints": 30,
+    "weekly_seasonality_order": 9,
+    "yearly_seasonality_order": 0,
+    "monthly_fourier_order": 5,
+    "holiday_prior_scale": 0.5821301199406494,
+    "holiday_window_before": 3,
+    "holiday_window_after": 3
+  },
+  "suggested_ranges": {
+    "growth_type": {
+      "type": "categorical",
+      "best": "logistic",
+      "top_k_distribution": {
+        "logistic": 10
+      },
+      "suggested": "logistic"
+    },
+    "log_transform": {
+      "type": "categorical",
+      "best": true,
+      "top_k_distribution": {
+        "true": 10
+      },
+      "suggested": true
+    },
+    "cap_multiplier": {
+      "type": "float",
+      "best": 3.5,
+      "top_k_min": 3.0,
+      "top_k_max": 3.5,
+      "suggested_min": 2.925,
+      "suggested_max": 3.575
+    },
+    "changepoint_prior_scale": {
+      "type": "float",
+      "best": 0.5177156788188195,
+      "top_k_min": 0.364029,
+      "top_k_max": 0.580044,
+      "suggested_min": 0.331626,
+      "suggested_max": 0.612446
+    },
+    "seasonality_prior_scale": {
+      "type": "float",
+      "best": 0.01842468031995574,
+      "top_k_min": 0.01017,
+      "top_k_max": 0.026508,
+      "suggested_min": 0.01,
+      "suggested_max": 0.028959
+    },
+    "changepoint_range": {
+      "type": "float",
+      "best": 0.8999999999999999,
+      "top_k_min": 0.9,
+      "top_k_max": 0.95,
+      "suggested_min": 0.8925,
+      "suggested_max": 0.95
+    },
+    "seasonality_mode": {
+      "type": "categorical",
+      "best": "multiplicative",
+      "top_k_distribution": {
+        "multiplicative": 10
+      },
+      "suggested": "multiplicative"
+    },
+    "interval_width": {
+      "type": "float",
+      "best": 0.8999999999999999,
+      "top_k_min": 0.85,
+      "top_k_max": 0.9,
+      "suggested_min": 0.8425,
+      "suggested_max": 0.9075
+    },
+    "n_changepoints": {
+      "type": "int",
+      "best": 30,
+      "top_k_min": 20,
+      "top_k_max": 30,
+      "suggested_min": 18,
+      "suggested_max": 32
+    },
+    "weekly_seasonality_order": {
+      "type": "int",
+      "best": 9,
+      "top_k_min": 3,
+      "top_k_max": 9,
+      "suggested_min": 2,
+      "suggested_max": 10
+    },
+    "yearly_seasonality_order": {
+      "type": "int",
+      "best": 0,
+      "top_k_min": 0,
+      "top_k_max": 1,
+      "suggested_min": 0,
+      "suggested_max": 2
+    },
+    "monthly_fourier_order": {
+      "type": "int",
+      "best": 5,
+      "top_k_min": 3,
+      "top_k_max": 5,
+      "suggested_min": 2,
+      "suggested_max": 5
+    },
+    "holiday_prior_scale": {
+      "type": "float",
+      "best": 0.5821301199406494,
+      "top_k_min": 0.469917,
+      "top_k_max": 0.820401,
+      "suggested_min": 0.417345,
+      "suggested_max": 0.872973
+    },
+    "holiday_window_before": {
+      "type": "int",
+      "best": 3,
+      "top_k_min": 2,
+      "top_k_max": 3,
+      "suggested_min": 1,
+      "suggested_max": 3
+    },
+    "holiday_window_after": {
+      "type": "int",
+      "best": 3,
+      "top_k_min": 3,
+      "top_k_max": 3,
+      "suggested_min": 2,
+      "suggested_max": 3
+    }
+  },
+  "convergence": {
+    "is_converged": true,
+    "plateau_at_trial": 76,
+    "best_trial_number": 76,
+    "trials_since_improvement": 30,
+    "total_completed_trials": 107,
+    "improvement_rate_early_vs_late": 0.8764,
+    "early_improvement": 4703.112726,
+    "late_improvement": 4121.773291,
+    "boundary_warnings": [
+      "seasonality_prior_scale near LOWER bound (0.0184 \u2248 0.01)",
+      "yearly_seasonality_order near LOWER bound (0.0000 \u2248 0)",
+      "monthly_fourier_order near UPPER bound (5.0000 \u2248 5)",
+      "holiday_prior_scale near LOWER bound (0.5821 \u2248 0.1)",
+      "holiday_window_before near UPPER bound (3.0000 \u2248 3)",
+      "holiday_window_after near UPPER bound (3.0000 \u2248 3)"
+    ],
+    "recommendation": "\u26a0 CONVERGED but 6 parameter(s) hit search bounds: [seasonality_prior_scale near LOWER bound (0.0184 \u2248 0.01), yearly_seasonality_order near LOWER bound (0.0000 \u2248 0), monthly_fourier_order near UPPER bound (5.0000 \u2248 5), holiday_prior_scale near LOWER bound (0.5821 \u2248 0.1), holiday_window_before near UPPER bound (3.0000 \u2248 3), holiday_window_after near UPPER bound (3.0000 \u2248 3)]. Consider widening those bounds and re-running to confirm the boundary isn't limiting model quality."
+  },
+  "model_config": {
+    "growth_type": "logistic",
+    "log_transform": true,
+    "cap_multiplier": 3.5,
+    "use_holidays": true,
+    "holiday_calendar": "US"
+  },
+  "cv_config": {
+    "initial": "73 days",
+    "period": "14 days",
+    "horizon": "7 days"
+  },
+  "elapsed_seconds": 1832.3
+}
